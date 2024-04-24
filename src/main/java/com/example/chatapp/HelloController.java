@@ -10,4 +10,9 @@ public class HelloController {
         Thread.sleep(Long.parseLong("5000"));
         return "Yolo";
     }
+
+    @GetMapping("/chat")
+    public void chat() throws InterruptedException {
+
+    }
 }
