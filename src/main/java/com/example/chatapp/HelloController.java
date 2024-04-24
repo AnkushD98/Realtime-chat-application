@@ -5,14 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @GetMapping("/")
+    @GetMapping("/yolo")
     public String index() throws InterruptedException {
-        Thread.sleep(Long.parseLong("5000"));
         return "Yolo";
     }
 
-    @GetMapping("/chat")
-    public void chat() throws InterruptedException {
-
-    }
 }
