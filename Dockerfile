@@ -18,7 +18,7 @@ FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file generated in the previous stage into the container
-COPY --from=build /app/target/RTChatApp-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/chat-app-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
